@@ -44,6 +44,10 @@
 
 另外在 SwitchyOmega 中需要使用 SOCKS5 代理，因为 HTTP 代理还是只会启动一个。
 
+#### 服务器配置
+
+请访问 [服务器] 获取更多信息。
+
 #### 开发
 
 Visual Studio 2015 is required.
@@ -56,4 +60,5 @@ GPLv3
 [Appveyor]:       https://ci.appveyor.com/project/clowwindy/shadowsocks-csharp
 [Build Status]:   https://ci.appveyor.com/api/projects/status/gknc8l1lxy423ehv/branch/master
 [最新版]: https://github.com/shadowsocks/shadowsocks-csharp/releases
+[服务器]:        https://github.com/shadowsocks/shadowsocks/wiki/Ports-and-Clients#linux--server-side
 [GFWList]:        https://github.com/gfwlist/gfwlist
