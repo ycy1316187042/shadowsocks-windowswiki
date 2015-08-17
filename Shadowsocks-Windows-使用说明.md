@@ -37,6 +37,13 @@
 
 对于 UDP，请使用 SocksCap 或 ProxyCap 强制你想使用的程序走代理。
 
+#### 多实例
+
+如果想使用其它工具如 SwitchyOmega 管理多个服务器，可以启动多个 Shadowsocks。
+为了避免配置产生冲突，把 Shadowsocks 复制到一个新目录里，并给它设置一个新的本地端口。
+
+另外在 SwitchyOmega 中需要使用 SOCKS5 代理，因为 HTTP 代理还是只会启动一个。
+
 #### 开发
 
 Visual Studio 2015 is required.
