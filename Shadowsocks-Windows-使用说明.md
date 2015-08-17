@@ -1,6 +1,3 @@
-Shadowsocks for Windows
-=======================
-
 [![Build Status]][Appveyor]
 
 #### 功能
