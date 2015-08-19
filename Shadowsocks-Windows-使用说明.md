@@ -48,6 +48,11 @@
 
 请访问 [服务器] 获取更多信息。
 
+#### 绿色模式
+
+如果你想把所有临时文件放在 shadowsocks/temp 目录而不是系统的 temp 目录，
+可以在 shadowsocks 所在目录创建一个 `shadowsocks_portable_mode.txt` 文件。
+
 #### 开发
 
 Visual Studio 2015 is required.
