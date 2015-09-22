@@ -13,6 +13,8 @@
 
 下载 [最新版]。
 
+从 2.5.8 开始你可以在 Releases 页面找到 exe 文件的 hash 值，你可以使用 [fciv](https://support.microsoft.com/en-us/kb/841290) 等工具 校验 `Shadowsocks.exe` 文件. 例如 `fciv.exe -both -add Shadowsocks.exe`
+
 #### 基本使用
 
 1. 在任务栏找到 Shadowsocks 图标
