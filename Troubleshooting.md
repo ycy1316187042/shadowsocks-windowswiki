@@ -4,6 +4,8 @@
 
 * Upgrade your .NET Framework to latest release and install all patches against it./升级系统的 .NET Framework 为最新版本，并且打全相关补丁。
 
+* Upgrade to latest operating system and IE if possible./尽可能升级操作系统和 IE 到最新版。
+
 * When the format of configuration file has changed, it may cause some issues, please delete all config files and restart to generate new config files, you have to reset from scratch./当配置文件格式发生变化时，可能引发问题，这时删掉所有相关配置文件让程序重新生成，然后手动重新配置。
 
 * Shadowsocks places files in `%TEMP%` or `temp/` folder(when using portable mode), if you encountered issues, you can delete the corresponding folder and try again. Please note that some 'security' software will clean up them without notice./Shadowsocks 在 `%TEMP%` 或者可执行文件同目录的 `temp/` 文件夹（使用便携模式时）放置程序需要的文件，如果遇到问题，可以尝试删除对应文件夹然后重试。请注意，有些“安全”软件会静默清理那些目录。
