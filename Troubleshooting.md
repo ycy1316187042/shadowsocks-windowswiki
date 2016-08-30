@@ -14,4 +14,4 @@
 
 * Some game accelerator and software works on the underlying layer (e.g. LSP) may interfere Shadowsocks, please report issues to them./有些游戏加速器和运行在网络底层（比如LSP）的软件可能会干扰 Shadowsocks，请将问题汇报给他们。
 
-* You can also get bleeding edge version from Continuous Integration(e.g. AppVeyor), and test your issue again./你也可以从CI处获取最新版本（比如 AppVeyor）测试你遇到的问题。
+* You can also get bleeding edge version from Continuous Integration(e.g. AppVeyor), and test your issue again. Please note that do NOT use builds belong to Pull Requests./你也可以从CI处获取最新版本（比如 AppVeyor）测试你遇到的问题，请注意**不要**使用属于Pull Request的自动编译版本。
