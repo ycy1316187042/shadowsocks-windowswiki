@@ -4,7 +4,7 @@
 
 * Upgrade your .NET Framework to latest release and install all patches against it./升级系统的 .NET Framework 为最新版本，并且打全相关补丁。
 
-* Upgrade to latest operating system and IE if possible./尽可能升级操作系统和 IE 到最新版。
+* Upgrade to latest operating system and IE if possible. If you are using Windows Insider Preview, please consider report bugs to Microsoft first./尽可能升级操作系统和 IE 到最新版。如果使用预览版Windows，考虑先给微软汇报bug。
 
 * If you put executable file in C: drive, please use portable mode or grant Administrative permission in case of privilege issues./如果在 C 盘运行本程序，请使用便携模式或者授予管理员权限以防引发权限问题。
 
