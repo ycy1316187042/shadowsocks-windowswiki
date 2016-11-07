@@ -83,7 +83,7 @@
 
 #### 开发
 
-Visual Studio 2015 is required.
+[Visual Studio 2015] & [.NET Framework 4.6.2 Developer Pack] are required.
 
 #### 授权
 
@@ -95,3 +95,5 @@ GPLv3
 [最新版]: https://github.com/shadowsocks/shadowsocks-windows/releases
 [服务器]:        https://github.com/shadowsocks/shadowsocks/wiki/Ports-and-Clients#linux--server-side
 [GFWList]:        https://github.com/gfwlist/gfwlist
+[Visual Studio 2015]: https://www.visualstudio.com/downloads/
+[.NET Framework 4.6.2 Developer Pack]: https://www.microsoft.com/download/details.aspx?id=53321
