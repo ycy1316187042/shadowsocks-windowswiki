@@ -85,8 +85,8 @@
 GPLv3
 
 
-[Appveyor]:       https://ci.appveyor.com/project/wongsyrone/shadowsocks-windows-pljx3
-[Build Status]:   https://ci.appveyor.com/api/projects/status/otie4km27ws1wak2/branch/master?svg=true
+[Appveyor]:       https://ci.appveyor.com/project/wongsyrone/shadowsocks-windows-yqdou
+[Build Status]:   https://ci.appveyor.com/api/projects/status/yieb7lo96irmuc28/branch/master?svg=true
 [最新版]: https://github.com/shadowsocks/shadowsocks-windows/releases
 [服务器]:        https://github.com/shadowsocks/shadowsocks/wiki/Ports-and-Clients#linux--server-side
 [GFWList]:        https://github.com/gfwlist/gfwlist
