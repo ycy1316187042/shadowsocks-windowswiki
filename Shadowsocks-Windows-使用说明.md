@@ -13,6 +13,8 @@
 
 下载 [最新版]。
 
+需要安装 [.NET Framework 4.6.2]
+
 从 2.5.8 开始你可以在 Releases 页面找到 exe 文件的 hash 值，你可以使用 [fciv](https://support.microsoft.com/en-us/kb/841290) 等工具 校验 `Shadowsocks.exe` 文件. 例如 `fciv.exe -both -add Shadowsocks.exe`
 
 #### 基本使用
@@ -78,7 +80,7 @@
 
 #### 开发
 
-[Visual Studio 2015] & [.NET Framework 4.6.2 Developer Pack] are required.
+需要 [Visual Studio 2015] 或更高版本并安装 [.NET Framework 4.6.2 Developer Pack]。
 
 #### 授权
 
@@ -90,5 +92,6 @@ GPLv3
 [最新版]: https://github.com/shadowsocks/shadowsocks-windows/releases
 [服务器]:        https://github.com/shadowsocks/shadowsocks/wiki/Ports-and-Clients#linux--server-side
 [GFWList]:        https://github.com/gfwlist/gfwlist
+[.NET Framework 4.6.2]: https://www.microsoft.com/zh-CN/download/details.aspx?id=53344
 [Visual Studio 2015]: https://www.visualstudio.com/downloads/
 [.NET Framework 4.6.2 Developer Pack]: https://www.microsoft.com/download/details.aspx?id=53321
