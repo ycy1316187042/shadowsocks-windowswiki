@@ -22,7 +22,7 @@
 1. 在任务栏找到 Shadowsocks 图标
 2. 在 服务器 菜单添加多个服务器
 3. 选择 `启用系统代理` 来启用系统代理。请禁用浏览器里的代理插件，或把它们设置为使用系统代理。
-4. 除了设为系统代理，你也可以直接自己配置浏览器代理。在 SwitchyOmega 中把代理设置为 SOCKS5 或 HTTP 的 127.0.0.1:1080。这个 1080 端口可以在服务器设置中设置。
+4. 除了设为系统代理，你也可以直接自己配置浏览器代理。在 [SwitchyOmega] 中把代理设置为 SOCKS5 或 HTTP 的 127.0.0.1:1080。这个 1080 端口可以在服务器设置中设置。
 
 #### PAC
 
@@ -43,7 +43,7 @@
 
 #### 多实例
 
-如果想使用其它工具如 SwitchyOmega 管理多个服务器，可以启动多个 Shadowsocks。
+如果想使用其它工具如 [SwitchyOmega] 管理多个服务器，可以启动多个 Shadowsocks。
 为了避免配置产生冲突，把 Shadowsocks 复制到一个新目录里，并给它设置一个新的本地端口。
 
 #### 全局快捷键
@@ -87,10 +87,11 @@
 GPLv3
 
 
-[Appveyor]:       https://ci.appveyor.com/project/wongsyrone/shadowsocks-windows-yqdou
-[Build Status]:   https://ci.appveyor.com/api/projects/status/yieb7lo96irmuc28/branch/master?svg=true
+[Appveyor]:       https://ci.appveyor.com/project/celeron533/shadowsocks-windows
+[Build Status]:   https://ci.appveyor.com/api/projects/status/tfw57q6eecippsl5/branch/master?svg=true
 [最新版]: https://github.com/shadowsocks/shadowsocks-windows/releases
 [服务器]:        https://github.com/shadowsocks/shadowsocks/wiki/Ports-and-Clients#linux--server-side
+[SwitchyOmega]:  https://github.com/FelisCatus/SwitchyOmega
 [GFWList]:        https://github.com/gfwlist/gfwlist
 [.NET Framework 4.6.2]: https://www.microsoft.com/zh-CN/download/details.aspx?id=53344
 [Visual Studio 2015]: https://www.visualstudio.com/downloads/
