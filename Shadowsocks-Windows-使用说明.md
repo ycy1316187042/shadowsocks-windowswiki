@@ -13,7 +13,7 @@
 
 下载 [最新版]。
 
-需要安装 [.NET Framework 4.6.2]
+需要安装 [.NET Framework 4.6.2] 和 Microsoft [Visual C++ 2015 Redistributable] (x86)
 
 从 2.5.8 开始你可以在 Releases 页面找到 exe 文件的 hash 值，你可以使用 [fciv](https://support.microsoft.com/en-us/kb/841290) 等工具 校验 `Shadowsocks.exe` 文件. 例如 `fciv.exe -both -add Shadowsocks.exe`
 
@@ -96,3 +96,4 @@ GPLv3
 [.NET Framework 4.6.2]: https://www.microsoft.com/zh-CN/download/details.aspx?id=53344
 [Visual Studio 2015]: https://www.visualstudio.com/downloads/
 [.NET Framework 4.6.2 Developer Pack]: https://www.microsoft.com/download/details.aspx?id=53321
+[Visual C++ 2015 Redistributable]: https://www.microsoft.com/en-us/download/details.aspx?id=53840
