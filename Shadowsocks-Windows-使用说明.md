@@ -8,6 +8,7 @@
 4. 支持 HTTP 代理
 5. 支持多服务器切换
 6. 支持 UDP 代理
+7. 支持插件
 
 #### 下载
 
@@ -46,9 +47,15 @@
 如果想使用其它工具如 [SwitchyOmega] 管理多个服务器，可以启动多个 Shadowsocks。
 为了避免配置产生冲突，把 Shadowsocks 复制到一个新目录里，并给它设置一个新的本地端口。
 
+#### 插件
+
+若想通过插件来连接服务器，请到编辑服务器界面填入插件程序（相对路径或绝对路径）
+
+_注意：_ 在启用插件后，正向代理会被停用。
+
 #### 全局快捷键
 
-如果重启 Shadowsocks 则必须重新注册，因为此时环境可能发生变化，而且如果多开 Shadowsocks 则需要为后来启动的实例设置不同的快捷键。
+如果重启 Shadowsocks 则必须**重新注册**，因为此时环境可能发生变化，而且如果多开 Shadowsocks 则需要为后来启动的实例设置不同的快捷键。
 
 ##### 怎样键入快捷键?
 
@@ -84,8 +91,23 @@
 
 #### 授权
 
-GPLv3
+[GPLv3]
 
+#### 项目所使用到的第三方开源组件/库
+
+```
+Caseless.Fody (MIT)    https://github.com/Fody/Caseless
+Costura.Fody (MIT)     https://github.com/Fody/Costura
+Fody (MIT)             https://github.com/Fody/Fody
+GlobalHotKey (GPLv3)   https://github.com/kirmir/GlobalHotKey
+Newtonsoft.Json (MIT)  https://www.newtonsoft.com/json
+StringEx.CS ()         https://github.com/LazyMode/StringEx
+ZXing.Net (Apache 2.0) https://github.com/micjahn/ZXing.Net
+
+libsscrypto (GPLv2)    https://github.com/shadowsocks/libsscrypto
+Privoxy (GPLv2)        https://www.privoxy.org
+Sysproxy ()            https://github.com/Noisyfox/sysproxy
+```
 
 [Appveyor]:       https://ci.appveyor.com/project/celeron533/shadowsocks-windows
 [Build Status]:   https://ci.appveyor.com/api/projects/status/tfw57q6eecippsl5/branch/master?svg=true
@@ -97,3 +119,4 @@ GPLv3
 [Visual Studio 2015]: https://www.visualstudio.com/downloads/
 [.NET Framework 4.6.2 Developer Pack]: https://www.microsoft.com/download/details.aspx?id=53321
 [Visual C++ 2015 Redistributable]: https://www.microsoft.com/en-us/download/details.aspx?id=53840
+[GPLv3]:        https://github.com/shadowsocks/shadowsocks-windows/blob/master/LICENSE.txt
