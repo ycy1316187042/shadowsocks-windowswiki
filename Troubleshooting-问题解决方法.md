@@ -1,8 +1,8 @@
 # Troubleshooting/问题解决方法
 
-* Although it is an old topic, please double check your configurations./老调重弹，请仔细检查你的配置文件。
+* Although it is an old topic, please double check your configurations, in both server and client./老调重弹，请仔细检查你服务端和客户端的配置文件。
 
-* Upgrade your .NET Framework to latest release and install all patches against it./升级系统的 .NET Framework 为最新版本，并且打全相关补丁。
+* Upgrade your `.NET Framework` to latest release and install all patches against it./升级系统的`.NET Framework`到最新版本，并且打全相关补丁。
 
 * Upgrade to latest operating system and IE if possible. If you are using Windows Insider Preview, please consider report bugs to Microsoft first./尽可能升级操作系统和 IE 到最新版。如果使用预览版Windows，考虑先给微软汇报bug。
 
@@ -14,6 +14,15 @@
 
 * Firewall may block traffic made by Shadowsocks, check it./防火墙可能屏蔽 Shadowsocks 的流量，检查防火墙规则。
 
+* The `ping` echo only meaning the server machine is online. It cannot proof that the Shadowsocks Server port is available./服务器能`ping`通只是表明服务器在线，无法证明 Shadowsocks 服务端程序的端口可达。
+
 * Some game accelerator and software works on the underlying layer (e.g. LSP) may interfere Shadowsocks, please report issues to them./有些游戏加速器和运行在网络底层（比如LSP）的软件可能会干扰 Shadowsocks，请将问题汇报给他们。
+
+* Sometimes the `Winsock` and `TCP/I`P protocol is corrupted for some reason. Please execute the following command with Administrator privilege in `CMD`. Then reboot./有时候系统的`Winsock`和`TCP/IP`协议栈因未知原因损坏，请以管理员权限在`CMD`中执行以下命令，然后重启：
+```
+netsh interface ipv4 reset
+netsh interface ipv6 reset
+netsh winsock reset
+```
 
 * You can also get bleeding edge version from Continuous Integration(e.g. AppVeyor), and test your issue again. Please note that do NOT use builds belong to Pull Requests./你也可以从CI处获取最新版本（比如 AppVeyor）测试你遇到的问题，请注意**不要**使用属于Pull Request的自动编译版本。
