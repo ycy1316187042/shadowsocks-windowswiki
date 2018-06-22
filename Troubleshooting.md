@@ -18,7 +18,7 @@
 
 * Some game accelerator and software works on the underlying layer (e.g. LSP) may interfere Shadowsocks, please report issues to them./有些游戏加速器和运行在网络底层（比如LSP）的软件可能会干扰 Shadowsocks，请将问题汇报给他们。
 
-* Sometimes the `Winsock` and `TCP/I`P protocol is corrupted for some reason. Please execute the following command with Administrator privilege in `CMD`. Then reboot./有时候系统的`Winsock`和`TCP/IP`协议栈因未知原因损坏，请以管理员权限在`CMD`中执行以下命令，然后重启：
+* Sometimes the `Winsock` and `TCP/IP` protocol is corrupted for some reason. Please execute the following command with Administrator privilege in `CMD`. Then reboot./有时候系统的`Winsock`和`TCP/IP`协议栈因未知原因损坏，请以管理员权限在`CMD`中执行以下命令，然后重启：
 ```
 netsh interface ipv4 reset
 netsh interface ipv6 reset
