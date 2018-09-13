@@ -1,6 +1,9 @@
 ### Important
 This manual only applicable on the non-SIP003 standard plugin, if your using plugin is in compliance with the SIP003 standard, read plugin manual or README file to config.
 
+### Supported Versions
+4.1.2 and above
+
 ### Environment Variables
 
 In Shadowsocks for Windows, can use 3rd plugins without [SIP003](https://github.com/shadowsocks/shadowsocks-org/wiki/Plugin) standard support.
@@ -14,14 +17,14 @@ These environment variables will inform plugin how to config localhost address, 
 ### QuickStart
 Download plugin to Shadowsocks.exe directory or somewhere you must know, for example: 
 ```
-D:\Shadowsocks\client_windows_amd64.exe
+D:\Shadowsocks\plugin_windows_amd64.exe
 ```
 
 Read plugin manual, find out how to use the parameter to config plugin and how to assign server host, server port, localhost and local port.
 
 In most case, you can use `-h` parameter in the command line (cmd.exe) to get this information:
 ```
-client_windows_amd64.exe -h
+plugin_windows_amd64.exe -h
 ```
 
 Open Shadowsocks for Windows "Edit Servers" window, Add server as usual.
@@ -30,7 +33,7 @@ In Server Port, write plugin port on server.
 
 In Plugin Program, write the plugin path, for example: 
 ```
-D:\Shadowsocks\client_windows_amd64.exe
+D:\Shadowsocks\plugin_windows_amd64.exe
 ```
 
 In Plugin Options, keep it blank.
