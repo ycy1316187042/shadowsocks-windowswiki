@@ -6,48 +6,52 @@ This manual only applicable on the non-SIP003 standard plugin, if your using plu
 
 ### Environment Variables
 
-In Shadowsocks for Windows, can use 3rd plugins without [SIP003](https://github.com/shadowsocks/shadowsocks-org/wiki/Plugin) standard support.
+In Shadowsocks for Windows, you can use 3rd party plugins which does not following the [SIP003](https://github.com/shadowsocks/shadowsocks-org/wiki/Plugin) standard.
 
-Shadowsocks for Windows provided 4 environment variables for plugin config:
+Shadowsocks for Windows provided 5 environment variables for [SIP003] plugin config:
 
-`%SS_LOCAL_HOST%` `%SS_LOCAL_PORT%` `%SS_REMOTE_HOST%` `%SS_REMOTE_PORT%`
+`%SS_LOCAL_HOST%`
+`%SS_LOCAL_PORT%`
+`%SS_REMOTE_HOST%`
+`%SS_REMOTE_PORT%`
+`%SS_PLUGIN_OPTIONS%` (optional)
 
-These environment variables will inform plugin how to config localhost address, local port number, remote host address, and remote port number.
+These environment variables will inform plugin how to config both local(your machine) and remote(server) endpoints.
 
 ### QuickStart
-Download plugin to Shadowsocks.exe directory or somewhere you must know, for example: 
+1. Prepare a plugin program to Shadowsocks.exe directory or somewhere you must know, for example: 
 ```
 D:\Shadowsocks\plugin_windows_amd64.exe
 ```
 
 Read plugin manual, find out how to use the parameter to config plugin and how to assign server host, server port, localhost and local port.
 
-In most case, you can use `-h` parameter in the command line (cmd.exe) to get this information:
-```
-plugin_windows_amd64.exe -h
-```
+2. Open Shadowsocks for Windows "Edit Servers" window, Add server as usual.
 
-Open Shadowsocks for Windows "Edit Servers" window, Add server as usual.
+3. In Server Port field, write plugin listening port from server.
 
-In Server Port, write plugin port on server.
-
-In Plugin Program, write the plugin path, for example: 
+4. In Plugin Program field, write the plugin path (absolute or relative), for example: 
 ```
 D:\Shadowsocks\plugin_windows_amd64.exe
 ```
+or
+```
+plugin_windows_amd64.exe
+```
 
-In Plugin Options, keep it blank.
+5. In Plugin Options field, we could keep it blank.
 
-In Plugin Arguments, for example, The plugin is [kcptun](https://github.com/xtaci/kcptun), The kcptun using `-l` parameter to assign `local:port`, `-r` parameter to assign `server:port`, Then:
+6. In Plugin Arguments field, in this case, the plugin is [kcptun](https://github.com/xtaci/kcptun). It uses `-l` parameter to assign `local:port`, `-r` parameter to assign `server:port`. We could compose the command as following:
 ```
 -l %SS_LOCAL_HOST%:%SS_LOCAL_PORT% -r %SS_REMOTE_HOST%:%SS_REMOTE_PORT% --key <Plugin Password> --crypt <Encryption algorithm> --mode <Selected mode>
 ```
+You need to fill the <Plugin Password>, <Encryption algorithm> and <Selected mode> by yourself.
 
-When everything is done, just click the OK button, and should be work.
+7. Done.
 
 ### Troubleshooting
-If not working, open Task Manager, go to Progress tab(or details tab), check progress list, is plugin program file name in the list? 
+1. Confirm the plugin program executable file exists and the path is correct.
 
-If not, maybe is some wrong in the plugin parameter, usually is the spelling mistake or too many arguments.
+2. Determine whether the plugin program is executed or not by using Task Manager.
 
-If it's in Progress list, maybe is parameter variate is wrong, usually is password is not correct, encryption algorithm or mode not matching, check settings with server-side config.
+3. Check the plugin parameters. Is there any mistakes such as typo or missing parameters or mismatch with server configuration.
