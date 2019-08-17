@@ -31,6 +31,11 @@
 2. 你也可以从 [GFWList] （由第三方维护）更新 PAC 文件。
 3. 你也可以使用在线 PAC URL
 
+对于 Windows 10 商店和其相关应用请以管理员权限执行以下命令：
+```
+netsh winhttp import proxy source=ie
+```
+
 #### 服务器自动切换
 
 1. 负载均衡：随机选择服务器
